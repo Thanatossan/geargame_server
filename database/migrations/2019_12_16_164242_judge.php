@@ -21,6 +21,7 @@ class Judge extends Migration
             $table -> unsignedBigInteger('matchNumber');
             $table -> foreign('matchNumber')->references('matchNumber')->on('match');
             $table -> timestamp('update_at')->useCurrent();
+            $table -> string('type');
         });
     }
 

@@ -22,6 +22,7 @@ class Match extends Migration
             $table -> unsignedBigInteger('fieldNumber');
             $table -> foreign('fieldNumber')->references('fieldNumber')->on('field') -> onDelete('cascade');
             $table -> dateTime('matchTime');
+            
         });
     }
 
