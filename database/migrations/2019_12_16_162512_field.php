@@ -16,7 +16,7 @@ class Field extends Migration
         Schema::create('field',function (Blueprint $table){
             $table -> bigIncrements('fieldNumber');
             $table -> string('fieldName');
-            $table -> string('type');
+            $table -> string('sportType');
         });
     }
 
