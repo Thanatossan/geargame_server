@@ -11,5 +11,4 @@ class UserController extends Controller
         $data = User::all();
         return json_encode($data);
     }
-
 }

@@ -22,8 +22,10 @@ Route::prefix('/api')->group(function () {
     });
 
     Route::get('/getUser','userController@show');
-    
+    Route::post('/auth','Auth\userLoginController@auth');
 
 });
+
+
   
 
