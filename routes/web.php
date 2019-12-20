@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('/api')->group(function () {
+    
+    Route::get('/', function(){ 
+        return "this is from laravel";
+    });
+
+    Route::get('/getUser','userController@show');
+    
+
+});
+  
+
