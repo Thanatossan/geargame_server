@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 Route::prefix('/api')->group(function () {
-    
     Route::get('/', function(){ 
         return "this is from laravel";
     });

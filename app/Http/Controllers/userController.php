@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\judge;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
     public function show(){
-        $data = User::all();
-        return json_encode($data);
+        $passQuery = judge::where('judge.password','=','1234')->where('judge.username','=','cmu')->get();
+        echo count($passQuery);
+        return "ok";
     }
 }
