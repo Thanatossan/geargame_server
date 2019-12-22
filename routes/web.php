@@ -23,6 +23,8 @@ Route::prefix('/api')->group(function () {
     Route::get('/getUser','userController@show');
     Route::post('/auth','Auth\userLoginController@auth');
 
+    Route::get('/getMatch','matchController@getMatch');
+    Route::get('/incomingMatch','matchController@imcomingMatch');
 });
 
 

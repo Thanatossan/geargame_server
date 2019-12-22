@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\judge;
 class userLoginController extends Controller
 {
-    
     public function auth(Request $request){
         $username = $request->input('user.username');
         $password = $request->input('user.password');

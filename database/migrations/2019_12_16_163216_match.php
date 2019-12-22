@@ -28,8 +28,6 @@ class Match extends Migration
             $table-> string('sportCategory') ->nullable();
             $table -> unsignedBigInteger('fieldNumber');
             $table -> foreign('fieldNumber')->references('fieldNumber')->on('field') -> onDelete('cascade');
-            $tabel -> unsignedBigInteger('judgeID');
-            $table-> foreign('judgeID')->references('judgeID')->on('judge')-> onDelete('cascade');
             $table -> dateTime('matchStartTime');
             $table -> dateTime('matchEndTime');      
         });

@@ -13,13 +13,13 @@ class Judge extends Migration
      */
     public function up()
     {
-        //
         Schema::create('judge',function (Blueprint $table){
             $table->bigIncrements('judgeID');
             $table->string('username') -> unique();
             $table->string('password');
             $table -> timestamp('update_at')->useCurrent();
             $table -> string('type');
+    
         });
     }
 
