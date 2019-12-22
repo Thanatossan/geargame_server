@@ -18,8 +18,6 @@ class Judge extends Migration
             $table->bigIncrements('judgeID');
             $table->string('username') -> unique();
             $table->string('password');
-            $table -> unsignedBigInteger('matchNumber');
-            $table -> foreign('matchNumber')->references('matchNumber')->on('match');
             $table -> timestamp('update_at')->useCurrent();
             $table -> string('type');
         });
